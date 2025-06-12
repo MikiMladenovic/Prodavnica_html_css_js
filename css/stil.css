@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* Pocetak CSSa za hero sekciju */
+/* CSSa za hero sekciju */
 
 #hero {
   background: url(https://www.molerski-radovi.in.rs/wp-content/uploads/2025/01/42142.jpg)
@@ -30,9 +30,10 @@
   color: rgb(161, 5, 5);
   font-size: x-large;
 }
-/* Kraj CSSa za hero sekciju */
+/* CSSa za hero sekciju */
 
-/* Pocetak CSSa za delatnost sekciju */
+/* CSSa za delatnost sekciju */
+
 .delatnost-sekcija {
   background-color: rgb(252, 214, 143);
   max-width: 800px;
@@ -86,6 +87,12 @@
   font-family: sans-serif;
   margin-top: 10px;
   color: black;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.ponuda-box h3:hover {
+  transform: rotateY(180deg);
 }
 
 .delatnost-sekcija h2::after {
@@ -97,4 +104,86 @@
   margin: 10px auto;
 }
 
-/* Kraj CSSa za delatnost sekciju */
+/* CSSa za delatnost sekciju */
+
+/* CSSa za stiropor sekciju */
+
+.stiropor-sadrzi img {
+  width: 200px;
+  height: 200px;
+}
+.stiropor {
+  background-color: aquamarine;
+  padding: 20px 30px;
+  text-align: center;
+}
+.cena {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+.stiropor h2 {
+  color: blue;
+}
+.stiropor-8 {
+  font-size: 20px;
+  color: brown;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.stiropor-sadrzi {
+  position: relative;
+}
+
+.stiker {
+  position: absolute;
+  top: 10px;
+  left: 200px;
+  background-color: red;
+  color: white;
+  padding: 3px 5px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px white;
+  letter-spacing: 2px;
+  transform-origin: top center;
+  animation: swing 2s infinite ease-in-out;
+}
+.stiropor stiker:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.petica {
+  margin: 8px;
+  padding: 10px;
+  border-top: 2px solid rgb(19, 18, 18);
+}
+
+/* CSSa za stiropor sekciju */
