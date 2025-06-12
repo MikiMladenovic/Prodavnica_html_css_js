@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* Pocetak CSSa za hero sekciju */
+
 #hero {
   background: url(https://www.molerski-radovi.in.rs/wp-content/uploads/2025/01/42142.jpg)
     no-repeat center/cover;
@@ -28,3 +30,71 @@
   color: rgb(161, 5, 5);
   font-size: x-large;
 }
+/* Kraj CSSa za hero sekciju */
+
+/* Pocetak CSSa za delatnost sekciju */
+.delatnost-sekcija {
+  background-color: rgb(252, 214, 143);
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 50px;
+  width: 70%;
+  box-shadow: 2px 2px 3px rgb(135, 134, 134);
+}
+.delatnost-sekcija h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: rgb(200, 162, 90);
+  border-radius: 10px;
+  padding: 5px;
+  text-shadow: 3px 3px 4px gray;
+  width: 40%;
+  margin: 0 auto;
+  transition: transform 0.8s ease;
+  transform: matrix();
+}
+
+.delatnost-sekcija h2:hover {
+  transform: rotateY(180deg);
+}
+
+.ponuda-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 20px;
+}
+
+.ponuda-box img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid purple;
+  /* POCETAK */
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+  /* KRAJ */
+}
+
+.ponuda-box img:hover {
+  transform: rotateZ(180deg);
+}
+
+.ponuda-box h3 {
+  text-align: center;
+  font-size: 20px;
+  font-family: sans-serif;
+  margin-top: 10px;
+  color: black;
+}
+
+.delatnost-sekcija h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  margin: 10px auto;
+}
+
+/* Kraj CSSa za delatnost sekciju */
