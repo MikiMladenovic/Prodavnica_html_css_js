@@ -30,8 +30,8 @@
   color: rgb(161, 5, 5);
   font-size: x-large;
 }
-/* CSSa za hero sekciju */
 
+/* CSSa za hero sekciju */
 /* CSSa za delatnost sekciju */
 
 .delatnost-sekcija {
@@ -41,6 +41,7 @@
   padding: 50px;
   width: 70%;
   box-shadow: 2px 2px 3px rgb(135, 134, 134);
+  border-radius: 10px;
 }
 .delatnost-sekcija h2 {
   margin-bottom: 50px;
@@ -86,7 +87,7 @@
   font-size: 20px;
   font-family: sans-serif;
   margin-top: 10px;
-  color: black;
+  color: rgb(0, 0, 0);
   transition: transform 0.8s ease;
   transform-style: preserve-3d;
 }
@@ -105,7 +106,6 @@
 }
 
 /* CSSa za delatnost sekciju */
-
 /* CSSa za stiropor sekciju */
 
 .stiropor-sadrzi img {
@@ -186,4 +186,55 @@
   border-top: 2px solid rgb(19, 18, 18);
 }
 
-/* CSSa za stiropor sekciju */
+/* CSS za stiropor sekciju */
+/* CSS za SRAFOVSKA ROBA sekciju */
+
+.srafovska-roba {
+  background-color: aquamarine;
+  max-width: 800px;
+  margin: 50px auto;
+  border-radius: 15px 0 0 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.slikaSrafovskaRoba img {
+  max-width: 100%;
+  max-height: auto;
+  display: block;
+  border-radius: 15px 0 0 15px;
+}
+
+.ostalo {
+  padding: 70px;
+}
+.ostalo h2 {
+  margin-bottom: 30px;
+}
+.ostalo p {
+  max-width: 200px;
+}
+
+.ostalo h2::after {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 3px;
+  background-color: black;
+}
+
+.paragraf-div p {
+  max-width: 145px;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* CSS za SRAFOVSKA ROBA sekciju */
+
+/* .delatnost-sekcija h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  margin: 10px auto;
+} */
